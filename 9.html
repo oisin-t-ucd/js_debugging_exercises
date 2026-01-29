@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="guess">
+    <button id="check">Check</button>
+    <p id="feedback"></p>
+    <script>
+        document.querySelector('#check').addEventListener('click', () => {
+            const userGuess = document.querySelector('#guess').value;
+            const feedback = document.querySelector('#feedback');
+            if (userGuess = "magic") {
+                feedback.innerText = "Correct!";
+            } else {
+                feedback.innerText = "Try again!";
+            }
+        });
+    </script>
+</body>
+</html>

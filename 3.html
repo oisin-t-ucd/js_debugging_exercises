@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="counterBtn">Click Me</button>
+    <p id="display">0</p>
+    <script>
+        const btn = document.querySelector('#counterBtn');
+        btn.addEventListener('click', () => {
+            let count = 0;
+            count++;
+            document.querySelector('#display').innerText = count;
+        });
+    </script>
+</body>
+</html>

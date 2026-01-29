@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="action">Click</button>
+    <p id="msg">Original Text</p>
+    <script>
+        document.getelementbyid('action').addEventListener('click', () => {
+            document.getElementById('msg').innerText = "Changed!";
+        });
+    </script>
+</body>
+</html>
