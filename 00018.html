@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form id="myForm">
+        <input type="text" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="msg"></p>
+    <script>
+        document.querySelector('#myForm').addEventListener('submit', function(){
+            document.querySelector('#msg').innerText = "Form Processed!";
+            console.log("Success");
+        });
+    </script>
+</body>
+</html>

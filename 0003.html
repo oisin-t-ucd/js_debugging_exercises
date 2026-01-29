@@ -5,7 +5,7 @@
     <p id="display">0</p>
     <script>
         const btn = document.querySelector('#counterBtn');
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', function() {
             let count = 0;
             count++;
             document.querySelector('#display').innerText = count;

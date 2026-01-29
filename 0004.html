@@ -4,7 +4,7 @@
     <div class="box" style="width:100px; height:100px; border:1px solid black;"></div>
     <button id="colorBtn">Change Color</button>
     <script>
-        document.querySelector('#colorBtn').addEventListener('click', () => {
+        document.querySelector('#colorBtn').addEventListener('click', function(){
             const box = document.querySelector('#box');
             box.style.backgroundColor = 'red';
         });

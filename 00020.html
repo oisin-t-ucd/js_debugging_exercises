@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="save">Save Name</button>
+    <button id="load">Load Name</button>
+    <script>
+        document.querySelector('#save').addEventListener('click', function(){
+            localStorage.setItem('user_data', 'John Doe');
+        });
+
+        document.querySelector('#load').addEventListener('click', function(){
+            const data = localStorage.getItem('user_data');
+            const parsed = JSON.parse(data);
+            alert("Name: " + parsed);
+        });
+    </script>
+</body>
+</html>

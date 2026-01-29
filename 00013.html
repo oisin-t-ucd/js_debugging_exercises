@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p class="text">Item A</p>
+    <p class="text">Item B</p>
+    <button id="update">Update All</button>
+    <script>
+        document.querySelector('#update').addEventListener('click', function(){
+            const paragraphs = document.querySelectorAll('.text');
+            paragraphs.innerText = "Updated!";
+            paragraphs.style.color = "blue";
+        });
+    </script>
+</body>
+</html>

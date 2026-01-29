@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="list" style="padding: 20px; border: 1px solid black;">
+        <li>Pizza</li>
+        <li>Burgers</li>
+    </ul>
+    <script>
+        document.querySelector('#list').addEventListener('click', function(e) {
+            const fruit = e.target.innerText;
+            alert("You chose: " + fruit);
+        });
+    </script>
+</body>
+</html>

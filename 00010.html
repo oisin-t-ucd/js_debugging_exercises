@@ -5,7 +5,7 @@
     <button id="toggle">Toggle</button>
     <script>
         let isVisible = "false";
-        document.querySelector('#toggle').addEventListener('click', () => {
+        document.querySelector('#toggle').addEventListener('click', function(){
             const msg = document.querySelector('#secret');
             if (isVisible) {
                 msg.style.display = 'none';

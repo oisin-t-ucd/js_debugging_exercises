@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="test">Run Test</button>
+    <p id="result"></p>
+    <script>
+        document.querySelector('#test').addEventListener('click', function(){
+            const original = { theme: "dark", volume: 10 };
+            const backup = original;
+
+            original.theme = "light";
+
+            if (backup.theme === "dark") {
+                document.querySelector('#result').innerText = "Pass: Backup preserved";
+            } else {
+                document.querySelector('#result').innerText = "Fail: Backup changed too!";
+            }
+        });
+    </script>
+</body>
+</html>

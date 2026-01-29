@@ -4,7 +4,7 @@
     <button id="action">Click</button>
     <p id="msg">Original Text</p>
     <script>
-        document.getelementbyid('action').addEventListener('click', () => {
+        document.getelementbyid('action').addEventListener('click', function(){
             document.getElementById('msg').innerText = "Changed!";
         });
     </script>

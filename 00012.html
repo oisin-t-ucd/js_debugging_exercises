@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="fetch">Fetch Data</button>
+    <p id="status"></p>
+    <script>
+        let data = null;
+        document.querySelector('#fetch').addEventListener('click', function(){
+            setTimeout(function() {
+                data = ["User1", "User2", "User3"];
+            }, 500);
+
+            document.querySelector('#status').innerText = "Loaded " + data.length + " items";
+        });
+    </script>
+</body>
+</html>

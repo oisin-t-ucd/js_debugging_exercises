@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="init">Enable Generator</button>
+    <button id="gen">Generate Number</button>
+    <div id="out"></div>
+    <script>
+        const initBtn = document.querySelector('#init');
+        const genBtn = document.querySelector('#gen');
+        const out = document.querySelector('#out');
+
+        initBtn.addEventListener('click', function(){
+            genBtn.addEventListener('click', function() {
+                const p = document.createElement('p');
+                p.innerText = Math.random();
+                out.appendChild(p);
+            });
+        });
+    </script>
+</body>
+</html>

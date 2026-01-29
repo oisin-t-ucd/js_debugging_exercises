@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="mylist">
+        <li>Task 1</li>
+        <li>Task 2</li>
+    </ul>
+    <button id="fix">Mark All</button>
+    <script>
+        document.querySelector('#fix').addEventListener('click', function(){
+            const list = document.getElementById('mylist');
+            const items = list.getElementsByTagName('li');
+
+            for (let i = 0; i < items.length; i++) {
+                const newItem = document.createElement('li');
+                newItem.innerText = items[i].innerText + " *";
+                list.appendChild(newItem);
+            }
+        });
+    </script>
+</body>
+</html>

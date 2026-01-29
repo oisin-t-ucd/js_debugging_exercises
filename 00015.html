@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="check">Check Balance</button>
+    <p id="out"></p>
+    <script>
+        document.querySelector('#check').addEventListener('click', function(){
+            const item1 = 0.1;
+            const item2 = 0.2;
+            const total = item1 + item2;
+
+            if (total === 0.3) {
+                document.querySelector('#out').innerText = "Exact change!";
+            } else {
+                document.querySelector('#out').innerText = "Total is: " + total;
+            }
+        });
+    </script>
+</body>
+</html>

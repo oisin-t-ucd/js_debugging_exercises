@@ -6,7 +6,7 @@
     <p id="result"></p>
     <script>
         const btn = document.querySelector('#btn');
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', function() {
             const val1 = document.querySelector('#num1').value;
             const val2 = document.querySelector('#num2').value;
             document.querySelector('#result').innerText = val1 + val2;
